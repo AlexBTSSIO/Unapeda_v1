@@ -1,0 +1,60 @@
+/* theme */
+
+:root{
+    --color-theme-d: #000;
+    --colors-theme-b: #2b2a33;
+    --colors-theme-g: #03045e;
+    --colors-theme-s: #0c95df;
+    --colors-theme-c: #caf0f8;
+    --colors-theme-p: #42414d;
+    --bgc-hover: #DFE6E9;
+    --color-blanc: #fff;
+}
+header h1{
+    line-height: 5.0rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-theme-d);
+    background-color: var(--colors-theme-s);
+}
+
+nav{
+    color: var(--color-theme-d);
+    background-color: var(--colors-theme-c);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 100rem;
+    margin:0 auto;
+    font-size: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width: calc(100% / 7);
+}
+
+nav ul li a{
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    
+}
+nav li:hover{
+    background-color: var(--bgc-hover);
+}
+img{
+display: block;
+width: calc(100% / 3);
+}
+h2{
+    color: var(--color-blanc);
+    background-color: var(--colors-theme-g);
+}
+ 
