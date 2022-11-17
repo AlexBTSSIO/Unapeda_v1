@@ -9,6 +9,7 @@
     --colors-theme-p: #42414d;
     --bgc-hover: #DFE6E9;
     --color-blanc: #fff;
+    --color-footer:#2480F2;
 }
 header h1{
     line-height: 5.0rem;
@@ -17,6 +18,14 @@ header h1{
     color: var(--color-theme-d);
     background-color: var(--colors-theme-s);
 }
+img{
+    display: block; 
+    /* height: 90vh;
+    width: 100vw; */
+     /* background-image: url(/asset/asset0.png); 
+    background-size: cover;  */
+    width: calc(100% / 3);
+    }
 
 nav{
     color: var(--color-theme-d);
@@ -49,12 +58,39 @@ nav ul li a{
 nav li:hover{
     background-color: var(--bgc-hover);
 }
-img{
-display: block;
-width: calc(100% / 3);
+
+main{
+    margin: 30px;
 }
-h2{
+main h2{
     color: var(--color-blanc);
     background-color: var(--colors-theme-g);
+    padding-left: 30px;
 }
+
+footer h2{
+background-color: var(--color-footer);
+ text-align: center;
+display: block;
+}
+footer ul{
+    text-align: center;
+    
+}
+@media screen and ( max-width: 970px)
+{
+    nav{
+        position: relative;
+    }
+    nav ul li {
+       width: 100%;
+       
+    }
+    nav ul li a{
+        margin-left: 30px;
+        text-align: left;
+     }
+    
+}
+
  
