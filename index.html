@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNAPEDA</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="./css/try.css"> -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />  
 </head>
 <body>
+    <script src="./js/app.js"></script>
+    
     <header>
-       
+
         <h1>UNAPEDA</h1>
         <img src="/asset/asset0.png" alt="Logo_UNAPEDA">
+           
     </header>
     <nav>
         <ul class="main-menu">
@@ -24,85 +30,125 @@
             <li><a href="#infos">les parents</a></li>
             <li><a href="#soutenez-nous">Soutenez nous</a></li>
             <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
+        <input type="text" placeholder="Rechercher..">
     </nav>
    
     <main>
-
-       <section>
-        <h2 id="accueil" class="main-menu">  L’accueil</h2>
-        <p></p>
-            <ul>
-                <li>UNAPEDA le réseau</li>
-                <li>Adhésion</li>
-                <li>Inscription news</li>
-                <li>Nos dernières actualités</li>
-                <li>Les réseaux sociaux</li>
-            </ul>
+        <button onclick="window.location.href = 'https://www.facebook.com/unapeda.fr';">
+            <img src="/asset/facebook.svg" alt="îcone_facebook">
+            Voir notre Facebook
+        </button>
         
+        <div class="content">
+            <section id="reseau">
+                <h3>
+                    Notre Réseau
+                    <button id="btn_1" >
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            arrow_drop_down
+                            </span>                     
+                    </button>
+                </h3>
+                <ul id="ul_1" >
+                    <li>Adhésion</li>
+                    <li>Inscription news</li>
+                    <li>Nos dernières actualités</li>
+                    <li>Les réseaux sociaux</li>
+                </ul>
+                
+            </section>
 
-        <h2 id="association" class="main-menu">  L’association</h2>
-        <p></p>
-            <ul>
-                <li>Notre histoire</li>
-                <li> Nos membres</li>
-                <li>  Nos valeurs</li>
-                <li>L’administration (statuts et docs)</li>
-                <li>Nos partenaires</li>
-            </ul>
-        
 
-        <h2 id="missions" class="main-menu">Nos missions</h2>
-        <p>Nous intervenons pour défendre vos droits  dans:</p>
-            <ul>
-                <li>L’éducation</li>
-                <li>La santé</li>
-                <li>L’emploi</li>
-                <li> Les mobilités </li>
-                <li>Le sport</li>
-            </ul>
-        
-        <h2 id="besoin" class="main-menu">Vos besoins</h2>
-        <p>Nous proposons des activités pour favoriser l’autonomie </p>
-            <ul>
-                <li>De l’écoute via nos cafés signes à thème</li>
-                <li> Des journées d’information</li>
-                <li>Des sensibilisations </li>
-                <li>Des services  via nos membres</li>
-            </ul>
-        
-        <h2 id="infos" class="main-menu">Les infos pour les parents</h2>
-        <p></p>
-            <ul>
-                <li>L’actualité</li>
-                <li> les études</li>
-                <li> Connaître vos Droits</li>
-                <li>Les aides techniques</li>
-                <li>Les assurances partenaires</li>
-                <li>Les aides humaines</li>
-                <li> Les adresses utiles</li>
-            </ul>       
-
-       </section>
+            <section id="association">
+                <h3>
+                    L’association
+                    <button id="btn_2" >
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            arrow_drop_down
+                            </span>                            
+                    </button>
+                </h3>
+                <ul id="ul_2" >
+                    <li>Notre histoire</li>
+                    <li>Nos membres</li>
+                    <li>Nos valeurs</li>
+                    <li>L’administration</li>
+                    <li>Nos partenaires</li>
+                </ul>
+            </section>
+            
+            <section id="besoins">
+                <h3>
+                    Vos besoins
+                    <button id="btn_3">
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            arrow_drop_down
+                            </span>                            
+                    </button>
+                </h3>
+                <ul id="ul_3">
+                    <li>L'éducation</li>
+                    <li>La santé</li>
+                    <li>L'emploi</li>
+                    <li>Les mobilités</li>
+                    <li>Le sport</li>
+                </ul>
+            </section>
+            <section id="inf">
+                <h3>
+                    Les infos utiles
+                    <button id="btn_4">
+                        <span class="material-symbols-outlined" aria-hidden="true">
+                            arrow_drop_down
+                            </span>                            
+                    </button>
+                </h3>
+                <ul id="ul_4">
+                    <li>L'actualité</li>
+                    <li>Les études</li>
+                    <li>Connaitre vos droits</li>
+                    <li>Les aides techniques</li>
+                    <li>Les aides humaines</li>
+                    <li>Les adresses utiles</li>
+                </ul>
+            </section>
+        </div>
+        <div class="more">
+            <section id="association">
+                <h3>
+                    Soutenez nous
+                </h3>
+                <ul>
+                    <li>Faire un don</li>
+                    <li>Devenez membre</li>
+                    <li>Bénévolat</li>
+                    <li>Animer un groupe de parole</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h3>
+                    Contacts
+                </h3>
+                <ul>
+                    <li>Vos questions</li>
+                    <li>Abonnez vous à la news</li>
+                    <li>Témoignages</li>
+                </ul>
+            </section>
+        </div>
     </main>
+   
 
     <footer>
-        <h2 id="soutenez-nous" class="main-menu">Soutenez-nous</h2>
-        <p></p>
-            <ul>
-                <li>Faire un don</li>
-                <li> Devenez membre</li>
-                <li> Devenez bénévole</li>
-                <li>Animer un groupe de parole</li>
-            </ul>
-        
-        <h2 id="contacts" class="main-menu">Contacts</h2>
-        <p></p>
-            <ul>
-                <li>Vos questions</li>
-                <li>Abonnez vous à la news</li>
-                <li> Témoignages</li>
-            </ul>
+        <ul>
+            <li>Mentions Légales</li>
+            <li>Plan du site</li>
+            <li>RGPD</li>
+        </ul>
     </footer>
+
 </body>
 </html>
